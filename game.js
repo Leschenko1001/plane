@@ -81,6 +81,7 @@ this.physics.add.overlap(this.plane, this.pipes, this.hitPipe, null, this);
             repeat: 1
         });
         this.plane.body.velocity.y = -350;
+        this.sound.play('jump');// додаємо відтворення звуку при кожному підлітанні
     }
 
     //Функція для створення блоку труби
